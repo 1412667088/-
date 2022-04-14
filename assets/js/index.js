@@ -1,6 +1,6 @@
 $(function() {
 //    调用getuserinfo 获取用户基本信息
-getUserInfo()
+getUserInfo();
 
 let layer = layui.layer;
 $('#btnlogout').on('click',function(){
@@ -41,7 +41,7 @@ $('#btnlogout').on('click',function(){
 let name = user.nickname || user.username;
 $('#welcome').html('欢迎&nbsp;&nbsp;' + name);
 if(user.user_pic !== null){
-$('.layui-nav-img').attr('str',user.user_pic).show();
+$('.layui-nav-img').attr('src',user.user_pic).show();
 $('.text-avatat').hide();
 }
 else{
